@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="내 관리 구역"
+            android:id="@+id/mywork_list">
+            <menu>
+
+                    <item android:title="첨단 스마트빌아파트" android:id="@+id/nav_mywork1"/>
+<!--                    <item android:title="구역2" android:id="@+id/nav_mywork2"/>-->
+<!--                    <item android:title="구역3" android:id="@+id/nav_mywork3"/>-->
+
+
+                    <item
+                        android:id="@+id/nav_new_item"
+                        android:title="New Item"
+                        android:visible="false"
+                        />
+
+
+
+
+            </menu>
+
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+
+
+
+        <item android:id="@+id/nav_check" android:title="출결 관리" />
+        <item android:id="@+id/nav_cctv" android:title="현장 CCTV" />
+        <item android:id="@+id/nav_workspace" android:title="현장 관리" />
+        <item android:id="@+id/nav_paper" android:title="서류 관리" />
+        <item android:id="@+id/nav_my" android:title="내 정보" />
+        <item android:id="@+id/nav_logout" android:title="로그아웃 >>" />
+
+
+    </group>
+
+
+
+</menu>

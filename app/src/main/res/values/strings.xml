@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">DANGILSA</string>
+
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    main menu : table -->
+    <string name="col1">내 관리 구역</string>
+    <!--    <string name="col2">Age</string>-->
+    <string name="row1_workspacecode">00289</string>
+    <string name="row2_workspacecode">00120</string>
+    <string name="row3_workspacecode">00301</string>
+
+    <string name="row1_workspacename">첨단 피오레아파트</string>
+    <string name="row2_workspacename">봉선 오피스텔</string>
+    <string name="row3_workspacename">상무 00빌라</string>
+
+    <!--    dropdown menu - WPChoice-->
+    <string name="item_label">Items</string>
+
+
+    <!--    check table column-->
+    <string name="check_col1">분류</string>
+    <string name="check_col2">이름</string>
+    <string name="check_col3">직책</string>
+    <string name="check_col4">소속</string>
+
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+
+
+    <string name="alt_bottom_sheet_chevron">Bottom sheet expandable indicator</string>
+
+    <string name="alt_bottom_sheet_max_results_button_minus">Decreasing maxium detected results
+        button</string>
+    <string name="alt_bottom_sheet_max_results_button_plus">Increasing maxium detected results
+        button</string>
+    <string name="alt_bottom_sheet_threshold_button_minus">Decreasing threshold of detected object
+        results button</string>
+    <string name="alt_bottom_sheet_threshold_button_plus">Increasing threshold of detected object
+        results button</string>
+    <string name="alt_bottom_sheet_thread_button_minus">Decrease the number of threads used</string>
+    <string name="alt_bottom_sheet_thread_button_plus">Increase the number of threads used</string>
+
+    <string name="label_interence_time">Inference Time</string>
+    <string name="label_fps">Frames per Second</string>
+    <string name="label_confidence_threshold">Threshold</string>
+    <string name="label_max_results">Max Results</string>
+    <string name="label_threads">Number of Threads</string>
+    <string name="label_delegate">Delegate</string>
+    <string name="label_models">ML Model</string>
+
+    <string-array name="delegate_spinner_titles">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+
+    <string-array name="models_spinner_titles">
+        <item>MobileNet V1</item>
+        <item>EfficientDet Lite0</item>
+        <item>EfficientDet Lite1</item>
+        <item>EfficientDet Lite2</item>
+    </string-array>
+</resources>

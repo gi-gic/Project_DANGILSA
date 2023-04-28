@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3">
+
+    <!--            Heading -->
+    <TableRow android:background="@color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="left"
+            android:padding="10sp"
+            android:id="@+id/checkr_num"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="240401_보호구 지급대장.hwp"
+            />
+
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/paper_download"
+            android:src="@drawable/download"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+    </TableRow>
+
+
+</TableLayout>

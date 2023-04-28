@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:paddingTop="60dp"
+    tools:context=".MainFragment"
+    android:id="@+id/fragment_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryorange"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="! 제 1구역:안전구가 탈착되었습니다. 확인 부탁드립니다"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/card1"
+                android:clickable="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+
+                android:layout_gravity=""
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+
+           >
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="출결관리"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/menu_img4" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                android:clickable="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="현장 CCTV"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/menu_img2" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/card3"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1
+    "
+                android:layout_gravity="fill"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="현장관리"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/menu_img3" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/card4"
+                android:clickable="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="서류관리"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/menu_img1" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </GridLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="30dp"
+
+            >
+
+            <!--            Heading -->
+            <TableRow android:background="@color/lightgray">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/col1"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <!--                <TextView-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/col2"-->
+                <!--                    android:textColor="@color/gray"-->
+                <!--                    android:padding="10sp"-->
+                <!--                    android:textSize="14sp"-->
+                <!--                    android:layout_weight="4"-->
+                <!--                    android:gravity="center_horizontal"-->
+                <!--                    />-->
+                <!--너비:  weight -->
+
+            </TableRow>
+
+            <!-- Table Data -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10sp"
+                    android:text="@string/row1_workspacecode"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="10sp"
+                    android:text="첨단 스마트빌아파트"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10sp"
+                    android:text="@string/row2_workspacecode"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="10sp"
+                    android:text="봉선 리츠오피스텔"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+
+                    />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+<!--     출첵버튼-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/camera_btn"
+        app:tint="@null"
+        app:backgroundTint="@color/white"
+        app:useCompatPadding="true"
+        app:fabCustomSize="80dp"
+        app:maxImageSize="55dp"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/fab_transformation_scrim_behavior"
+       />
+
+
+</FrameLayout>

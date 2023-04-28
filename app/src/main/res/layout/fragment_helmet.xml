@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelmetFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="140dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/warning_helmet"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="위험 발생!
+\n안전구가 탈착되었습니다."
+                android:textSize="18dp"
+                android:textColor="@color/primaryorange"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="350dp"
+            android:layout_height="240dp"
+            android:src="@drawable/ex_image"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/noti_trigger_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="같은 현장에 계신 직원분들께서는 재착용 확인\n부탁드립니다."
+            android:gravity="center"
+            android:background="@drawable/textview_border"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+
+            />
+
+
+    </LinearLayout>
+</FrameLayout>

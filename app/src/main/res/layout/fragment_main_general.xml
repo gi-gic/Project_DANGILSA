@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGeneralFragment">
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        >
+        
+        <ImageView
+            android:id="@+id/noti_trigger_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/warning_off"
+
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위험발생 시, 알려드립니다."
+            android:textSize="24dp"
+            android:textColor="@color/lightgray"
+            android:layout_marginTop="15dp"
+            android:id = "@+id/sensortextmain"
+
+            />
+
+        <TextView
+        android:id="@+id/sensortext_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="같은 현장에 계신 직원분들께서는 경고알림 발생시,
+        \n주의 당부사항을 꼭 지켜주세요.
+        \n\n예) 안전구 탈착시 - 재착용, 낙상 발생시 - 위치확인"
+        android:gravity="center"
+        android:background="@drawable/textview_border"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:layout_marginTop="40dp"
+        />
+
+    </LinearLayout>
+    
+    
+</FrameLayout>

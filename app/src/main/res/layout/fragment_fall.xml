@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FallFragment"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/warning_fall"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="낙상사고 발생!
+\n인원체크 및 위치를 확인해주세요."
+            android:textSize="18dp"
+            android:textColor="@color/primaryorange"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="같은 현장에 계신 직원분들께서는 넘어진 사람이 있는지, \n현장에서 보이지않는 사람이 있는지 확인해주시고,\n안전주의를 당부해주세요."
+            android:gravity="center"
+            android:background="@drawable/textview_border"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:layout_marginTop="40dp"
+
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

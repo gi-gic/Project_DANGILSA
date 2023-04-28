@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/findid_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="30dp"
+        android:text="\u003c    아이디 찾기"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        tools:ignore="MissingConstraints">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imagemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="-1dp"
+            app:srcCompat="@drawable/findid_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="23dp"
+
+                android:text="홍길동님의 아이디"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="honggil5"
+            android:layout_gravity="center"
+            android:textSize="21sp"
+            />
+
+
+        <View
+            android:layout_marginTop="60dp"
+            android:layout_width="360dp"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right|center"
+            android:layout_marginTop="5dp"
+           >
+        <TextView
+            android:id="@+id/login_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="30dp"
+            android:text="로그인 >"
+            android:textSize="17sp"
+
+            />
+
+            <TextView
+                android:id="@+id/findpw_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:text="비밁번호 찾기 >"
+                android:layout_marginRight="30dp"
+                android:textSize="17sp"
+               />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+ >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_error"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+
+            />
+        <TextView
+            android:id="@+id/noti_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제 1구역:안전구가 탈착되었습니다.\n확인부탁드립니다."
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/noti_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/noti_img"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <View
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

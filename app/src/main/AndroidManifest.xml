@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Enable instant app support -->
+    <dist:module dist:instant="true" /> <!-- Declare features -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- ObjectDetection 권한 허용 -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- Declare permissions -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Android internet permission -->
+    <!-- Sensor Permission -->
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DangIllSa_Kotlin"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginGeneralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotiFallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainGeneralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotiTriggerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindidpwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoinAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ObjectDetectionActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:resizeableActivity="true"
+            android:rotationAnimation="seamless"
+            android:theme="@style/AppTheme"
+            tools:targetApi="O">
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+        <activity
+            android:name=".ObjectSuccessActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"></activity>
+    </application>
+
+</manifest>

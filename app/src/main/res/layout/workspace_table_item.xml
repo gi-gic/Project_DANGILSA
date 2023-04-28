@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--            Heading -->
+    <TableRow android:background="@color/white">
+
+        <TextView
+
+            android:id="@+id/wp_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="10sp"
+            android:text="14:00"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wp_zone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:text="1"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/wp_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="left"
+            android:padding="10sp"
+            android:text="제 1구역:안전구가 탈착되었습니다"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/camera_img"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+
+            android:src="@drawable/camera_orange" />
+
+
+    </TableRow>
+
+</TableLayout>

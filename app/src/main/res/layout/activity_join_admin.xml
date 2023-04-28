@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinAdminActivity">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/join_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="\u003c    회원가입 (관리자)"
+                android:textSize="17sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/join_logo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:text="당일사에 오신것을 환영합니다!\n  당신이 일하는 사이, 안전을 지켜드립니다."
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="-30dp"
+                        android:src="@drawable/square" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="45dp"
+                        android:text="1. 알림 설정을 최대로 설정해주세요. 위기상황 발생시 알려드립니다." />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView3"
+                        android:layout_alignStart="@+id/textView3"
+                        android:layout_alignEnd="@+id/textView3"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="0dp"
+                        android:text="2. 출석체크 시 카메라의 정중앙에 얼굴 혹은 전신이 수평으로 보이게 해주세요. 더 빠른 진행에 도움이 됩니다." />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView5"
+                        android:layout_alignStart="@+id/textView5"
+                        android:layout_alignEnd="@+id/textView5"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="0dp"
+                        android:text="3. 직원들의 안전을 위해 현장작업 시작시 “반드시” 당일사 로그인을 당부해주세요. 앱을 통해 안전센서가 감지됩니다." />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView4"
+                        android:layout_alignStart="@+id/textView4"
+                        android:layout_alignEnd="@+id/textView4"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="0dp"
+                        android:text="4. 안전구 미착용 발생시, 알림을 받으신 후 cctv를 통해 재착용을 점검해주세요." />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이디"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="*"
+                        android:textColor="#FF5722"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="173dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#CCCCCC"
+
+                    android:drawableTint="#AEAEAE"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+                    android:paddingTop="-20dp"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이름"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:text="*"
+                        android:textColor="#FF5722"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:backgroundTint="#CCCCCC"
+
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="관리 구역 (현장코드)"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:text="*"
+                        android:textColor="#FF5722"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName6"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#CCCCCC"
+
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName7"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#CCCCCC"
+
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName5"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#CCCCCC"
+
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName4"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#CCCCCC"
+
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="휴대폰 번호(000-0000-0000)"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:text="*"
+                        android:textColor="#FF5722"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#CCCCCC"
+
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="비밀번호"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="*"
+                        android:textColor="#FF5722"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#CCCCCC"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="비밀번호 재확인"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:text="*"
+                        android:textColor="#FF5722"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName11"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#CCCCCC"
+
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:id="@+id/ctv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <CheckedTextView
+                        android:id="@+id/join_checked1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                        android:checkMarkTint="#F97E58"
+                        android:clickable="true"
+                        android:text="[필수] 개인정보 제 3자 제공"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckedTextView
+                        android:id="@+id/join_checked2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                        android:checkMarkTint="#F97E58"
+                        android:clickable="true"
+                        android:text="[필수] 위험 알림/메세지 수신 동의"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/join_join_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#F97E58"
+                    android:text="가입하기"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="40dp"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

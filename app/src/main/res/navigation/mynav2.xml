@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynav2"
+    app:startDestination="@id/mainGeneralFragment2">
+
+    <fragment
+        android:id="@+id/mainGeneralFragment2"
+        android:name="com.example.dangillsa_kotlin.MainGeneralFragment"
+        android:label="fragment_main_general"
+        tools:layout="@layout/fragment_main_general" >
+        <action
+            android:id="@+id/action_mainGeneralFragment2_to_helmetFragment2"
+            app:destination="@id/helmetFragment2" />
+        <action
+            android:id="@+id/action_mainGeneralFragment2_to_fallFragment2"
+            app:destination="@id/fallFragment2" />
+        <action
+            android:id="@+id/action_mainGeneralFragment2_to_myFragment"
+            app:destination="@id/nav_my_general" />
+    </fragment>
+    <fragment
+        android:id="@+id/fallFragment2"
+        android:name="com.example.dangillsa_kotlin.FallFragment"
+        android:label="fragment_fall"
+        tools:layout="@layout/fragment_fall" >
+        <action
+            android:id="@+id/action_fallFragment2_to_mainGeneralFragment2"
+            app:destination="@id/mainGeneralFragment2" />
+        <action
+            android:id="@+id/action_fallFragment2_to_mainGeneralFragment22"
+            app:destination="@id/mainGeneralFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/helmetFragment2"
+        android:name="com.example.dangillsa_kotlin.HelmetFragment"
+        android:label="fragment_helmet"
+        tools:layout="@layout/fragment_helmet" >
+        <action
+            android:id="@+id/action_helmetFragment2_to_mainGeneralFragment2"
+            app:destination="@id/mainGeneralFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_my_general"
+        android:name="com.example.dangillsa_kotlin.MyFragment"
+        android:label="fragment_my"
+        tools:layout="@layout/fragment_my" >
+        <action
+            android:id="@+id/action_myFragment_to_mainGeneralFragment2"
+            app:destination="@id/mainGeneralFragment2" />
+    </fragment>
+</navigation>

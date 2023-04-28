@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynav"
+    app:startDestination="@id/wpChoiceFragment">
+
+    <fragment
+        android:id="@+id/nav_mywork1"
+        android:name="com.example.dangillsa_kotlin.MainFragment"
+        android:label="fragment_main_layout"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_workspaceFragment"
+            app:destination="@id/nav_workspace" />
+        <action
+            android:id="@+id/action_nav_mywork1_to_cctvFragment"
+            app:destination="@id/nav_cctv" />
+        <action
+            android:id="@+id/action_nav_mywork1_to_checkFragment"
+            app:destination="@id/nav_check" />
+        <action
+            android:id="@+id/action_nav_mywork1_to_paperFragment"
+            app:destination="@id/nav_paper" />
+        <action
+            android:id="@+id/action_nav_mywork1_to_wpChoiceFragment"
+            app:destination="@id/wpChoiceFragment" />
+        <action
+            android:id="@+id/action_nav_mywork1_to_myAdminFragment"
+            app:destination="@id/nav_my" />
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_workspace"
+        android:name="com.example.dangillsa_kotlin.WorkspaceFragment"
+        android:label="fragment_workspace"
+        tools:layout="@layout/fragment_workspace" >
+        <action
+            android:id="@+id/action_workspaceFragment_to_mainFragment"
+            app:destination="@id/nav_mywork1" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_cctv"
+        android:name="com.example.dangillsa_kotlin.cctvFragment"
+        android:label="fragment_cctv"
+        tools:layout="@layout/fragment_cctv" >
+        <action
+            android:id="@+id/action_cctvFragment_to_nav_mywork1"
+            app:destination="@id/nav_mywork1" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_check"
+        android:name="com.example.dangillsa_kotlin.CheckFragment"
+        android:label="fragment_check"
+        tools:layout="@layout/fragment_check" >
+        <action
+            android:id="@+id/action_checkFragment_to_nav_mywork1"
+            app:destination="@id/nav_mywork1" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_paper"
+        android:name="com.example.dangillsa_kotlin.PaperFragment"
+        android:label="fragment_paper"
+        tools:layout="@layout/fragment_paper" >
+        <action
+            android:id="@+id/action_paperFragment_to_nav_mywork1"
+            app:destination="@id/nav_mywork1" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.dangillsa_kotlin.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/joinActivity"
+        android:name="com.example.dangillsa_kotlin.JoinActivity"
+        android:label="activity_join"
+        tools:layout="@layout/activity_join" />
+    <activity
+        android:id="@+id/findidpwActivity"
+        android:name="com.example.dangillsa_kotlin.FindidpwActivity"
+        android:label="activity_findidpw"
+        tools:layout="@layout/activity_findidpw" />
+    <activity
+        android:id="@+id/idActivity"
+        android:name="com.example.dangillsa_kotlin.IdActivity"
+        android:label="activity_id"
+        tools:layout="@layout/activity_id" />
+    <activity
+        android:id="@+id/pwActivity"
+        android:name="com.example.dangillsa_kotlin.PwActivity"
+        android:label="activity_pw"
+        tools:layout="@layout/activity_pw" />
+    <activity
+        android:id="@+id/joinAdminActivity"
+        android:name="com.example.dangillsa_kotlin.JoinAdminActivity"
+        android:label="activity_join_admin"
+        tools:layout="@layout/activity_join_admin" />
+
+    <fragment
+        android:id="@+id/wpChoiceFragment"
+        android:name="com.example.dangillsa_kotlin.WpChoiceFragment"
+        android:label="fragment_wp_choice"
+        tools:layout="@layout/fragment_wp_choice" >
+        <action
+            android:id="@+id/action_wpChoiceFragment_to_nav_mywork1"
+            app:destination="@id/nav_mywork1" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_my"
+        android:name="com.example.dangillsa_kotlin.MyAdminFragment"
+        android:label="fragment_my_admin"
+        tools:layout="@layout/fragment_my_admin" >
+        <action
+            android:id="@+id/action_myAdminFragment_to_nav_mywork1"
+            app:destination="@id/nav_mywork1" />
+    </fragment>
+
+
+</navigation>
